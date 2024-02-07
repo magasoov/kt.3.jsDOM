@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kt3</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 40px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+        #dvi1_1{
+            margin: 10px;
+            color: #111;
+            cursor: pointer;
+        }
+        #div1_2{
+            background: #C9243B;
+            display: flex;
+            width: 200px;
+            align-items: center;
+        }
+        .div1_block{
+            width: 20px;
+            height: 40px;
+            background: #862418;
+        }
+        span{
+            padding-left: 10px;
+        }
+        
+        #div2{
+            width: 200px;
+            height: 40px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+            margin-top: 2px;
+        }
+        #div3{
+            width: 300px;
+            height: 40px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            margin-left: 60px;
+            margin-top: 2px;
+        }
+        #div4{
+            width: 200px;
+            height: 40px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            margin-top: 2px;
+        }
+        #div5{
+            width: 200px;
+            height: 40px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+            margin-top: 2px;
+        }
+        #div6{
+            width: 200px;
+            height: 40px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            margin-left: 60px;
+            margin-top: 2px;
+        }
+        #div61{
+            width: 200px;
+            height: 40px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            margin-top: 2px;
+        }
+        #div7{
+            width: 200px;
+            height: 40px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+            margin-top: 2px;
+        }
+        .bca{
+            display: none;
+        }
+
+        .abc{
+            display: block;
+        }
+
+        .detectivy{
+            display: none;
+        }
+        .detectivyBlock{
+            display: block;
+        }
+        .div-2-21{
+            display: none;
+        }
+        .div-2-2_11{
+            display: block;
+        }
+        .bca1{
+            display: none;
+        }
+
+        .abc1{
+            display: block;
+        }
+        button{
+            background: transparent;
+            width: 10px;
+            height: 16px;
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+            border: 1px solid #111;
+            
+        }
+        
+    </style>
+
+<link rel="stylesheet"
+href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-- 1 -->
+    <div id="div1" >
+        <div id="dvi1_1"><button id="btn1" onclick=" addDiv ()">+</button></div><div id="div1_2"><div class="div1_block"></div><span>Книги</span></div>
+    </div>
+   <div class="bca"  id="abc" >
+        <div id="div2" >
+            <div id="dvi1_1"><button>+</button></div><div id="div1_2"><div class="div1_block"></div><span>Отечетвенные</span></div>
+        </div>
+        <div id="div2" >
+            <div id="dvi1_1"><button id="btnZarubej" onclick=" addDiv1 ()">+</button></div><div id="div1_2"><div class="div1_block"></div><span>Зарубежные</span></div>
+        </div>
+   </div>
+   <!-- /1 -->
+
+
+   <!-- 2 -->
+   <div class="detectivy" id="detectivyId">
+    <div id="div3">
+        <div id="dvi1_1"><button>+</button></div><div id="div1_2"><div class="div1_block"></div><span>Детективы</span></div>
+    </div>
+    <div id="div3" >
+        <div id="dvi1_1"><button>+</button></div><div id="div1_2"><div class="div1_block"></div><span>Научная фантастика</span></div>
+    </div>
+    <div id="div3" >
+        <div id="dvi1_1"><button>+</button></div><div id="div1_2"><div class="div1_block"></div><span>Исторические</span></div>
+    </div>
+   </div>
+   <!-- /2 -->
+
+   
+    <div id="div4">
+        <div id="dvi1_1"><button id="btnDvd" onclick=" addDiv3()">+</button></div><div id="div1_2"><div class="div1_block"></div><span>DVD</span></div>
+    </div>
+
+
+    <div class="bca1"  id="abc1">
+        <div id="div5">
+            <div id="dvi1_1"><button onclick="addDiv4()" id="btnOtec">+</button></div><div id="div1_2"><div class="div1_block"></div><span>Отечетвенные</span></div>
+        </div>
+    </div>
+
+
+    <div class="div-2-21" id="div-2-2_11">
+        <div id="div6">
+            <div id="dvi1_1"><button>+</button></div><div id="div1_2"><div class="div1_block"></div><span>Детективы</span></div>
+        </div>
+        <div id="div6">
+            <div id="dvi1_1"><button>+</button></div><div id="div1_2"><div class="div1_block"></div><span>Научная фантастика</span></div>
+        </div>
+        <div id="div6">
+            <div id="dvi1_1"><button>+</button></div><div id="div1_2"><div class="div1_block"></div><span>Исторические</span></div>
+        </div>
+        <div id="div61">
+            <div id="dvi1_1"><button>+</button></div><div id="div1_2"><div class="div1_block"></div><span>Зарубежные</span></div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
